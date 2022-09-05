@@ -7,7 +7,9 @@ const users = require('./user')
 
 app.use(express.json())
 
-
+app.get('/', (req, res) => {
+    res.send('server created')
+})
 
 //showing all json file user
 app.get('/user/all', (req, res) => {
