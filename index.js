@@ -7,10 +7,6 @@ const users = require('./user')
 
 app.use(express.json())
 
-app.get('/', (req, res) => {
-    res.send('welcome to our server')
-})
-
 
 
 //showing all json file user
